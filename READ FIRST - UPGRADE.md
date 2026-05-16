@@ -70,7 +70,7 @@ Upgrade when **any** of these is true:
 
 ## Step 2 — Sync your fork
 
-1. Go to your fork on GitHub: `https://github.com/YOUR_USER/Synology_HDD_db`
+1. Go to your fork on GitHub: `https://github.com/mvitaljic/Synology_HDD_db`
 
 2. If GitHub shows "This branch is N commits behind 007revad:main", click
    **Sync fork** → **Update branch**.
@@ -85,7 +85,7 @@ SSH into the NAS as your admin user.
 
 ```bash
 # Variables — UPDATE THESE for the new version
-GITHUB_USER="YOUR_GITHUB_USER"
+GITHUB_USER="mvitaljic"
 NEW_COMMIT_SHA="abc1234"          # full or short SHA from Step 1
 NEW_VERSION="v3.6.XXX"            # for documentation only
 
@@ -226,8 +226,8 @@ After a successful upgrade, edit the **Current pinned version** table at the top
 ```bash
 # On your dev machine, in your fork's local clone
 git pull
-# edit UPGRADE.md
-git add UPGRADE.md
+# edit READ FIRST - UPGRADE.md
+git add READ FIRST - UPGRADE.md
 git commit -m "Bump pinned version to vX.Y.Z (commit SHA)"
 git push
 ```
@@ -241,7 +241,7 @@ This keeps your runbook synchronized with reality.
 For when you've done this before and just want the commands:
 
 ```bash
-GITHUB_USER="YOUR_GITHUB_USER"
+GITHUB_USER="mvitaljic"
 NEW_COMMIT_SHA="abc1234"
 NEW_VERSION="v3.6.XXX"
 
